@@ -1,0 +1,66 @@
+/* Set the background color to pale yellow */
+body {
+    background-color: #ffffcc;
+}
+
+/* Style the navigation links as blue buttons */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+/* Style the image to be smaller */
+.icon1 {
+    max-width: 150px; /* Adjust the size as needed */
+}
+
+/* Apply different text formatting */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555; /* Slightly darker text color */
+}
+
+ul {
+    font-size: 16px;
+    color: #555; /* Slightly darker text color */
+}
+
+.head {
+    display: flex;
+    margin: 60 px;
+}
+/* Styling table sections*/
+table {
+    border-collapse: collapse; /* Collapse borders for a single border */
+    border: 2px solid black; /* Set table border to black */
+    width: 100%; /* Make the table fill its container */
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px; /* Add padding to table header cells */
+}
+.icon2 {
+    max-width: 20px;
+}
+/* Styling the form */

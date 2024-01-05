@@ -1,0 +1,39 @@
+<!-- add.hbs -->
+<h1>Add New Task: </h1><br>
+<form action="/add" method="POST">
+  <label for="title">Title (required):</label><br>
+  <input type="text" id="title" name="title" required><br>
+
+  <label for="description">Description (optional):</label><br>
+  <textarea id="description" name="description" rows="4"></textarea><br>
+
+  <label for="priority">Priority (required):</label><br>
+  <select id="priority" name="priority" required>
+    <option value="1">1 (least urgent)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (most urgent)</option>
+  </select><br>
+
+  <label for="due-date">Due Date (required):</label><br>
+  <input type="date" id="due-date" name="due-date" required><br>
+
+  <label>Is Pinned (required):</label><br>
+  <input type="radio" id="pinned-true" name="pinned" value="true" required>
+  <label for="pinned-true">Yes</label>
+  <input type="radio" id="pinned-false" name="pinned" value="false" required>
+  <label for="pinned-false">No</label><br>
+
+  <label for="tags">Tags (each should be separated by a comma):</label><br>
+  <input type="text" id="tags" name="tags" placeholder=""><br>
+
+  <label for="progress">Progress (required):</label><br>
+  <select id="progress" name="progress" required>
+    <option value="not-started">Not Started</option>
+    <option value="in-progress">In Progress</option>
+    <option value="done">Done</option><br>
+  </select><br>
+
+  <button type="submit">Create New Task</button><br>
+</form>

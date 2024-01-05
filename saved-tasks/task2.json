@@ -1,0 +1,9 @@
+{
+    "title" : "Hard and Emergent Task",
+    "due-date" : "2023-09-30",
+    "description" : "Multi\nline\ndescription",
+    "tags" : ["Hard", "Homework", "Urgent"],
+    "priority": 2,
+    "progress" : "done",
+    "pinned": true
+}

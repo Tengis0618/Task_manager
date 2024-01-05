@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="filter">
+        <h1>Filter Tasks:</h1>
+        <form action="/" method="get">
+            <input type="text" name="titleQ" placeholder="Filter by title">
+            <input type="text" name="tagQ" placeholder="Filter by tag">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="head">  
+    <h1>My Tasks:</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Pinned</th>
+                <th>Progress</th>
+                <th>Title</th>
+                <th>
+                    Due Date
+                    <a href="/?sort-by=due-date&sort-order=asc">⬆️</a>
+                    <a href="/?sort-by=due-date&sort-order=desc">⬇️</a>
+                </th>
+                <th>
+                    Priority
+                    <a href="/?sort-by=priority&sort-order=asc">⬆️</a>
+                    <a href="/?sort-by=priority&sort-order=desc">⬇️</a>
+                </th>
+                <th>Tags</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each taskList}}
+                <tr>
+                    <td>{{#if this.pinned}}
+                        <img class="icon2" src="/img/pin.png" alt="Pi Symbol">
+                    {{else}}
+
+                    {{/if}}</td>
+                    <td>{{this.progress}}</td>
+                    <td>{{this.title}}</td>
+                    <td>
+                        {{this.[due-date]}} 
+                    </td>
+                    <td>
+                        {{this.priority}}
+                    </td>
+                    <td>{{#each this.tags}}
+                            <span class="tag" style="background-color: #007bff; color: white; padding: 5px 10px;
+    border-radius: 5px;">{{this}}</span>
+                        {{/each}}
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table> 
+</div>

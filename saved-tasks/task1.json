@@ -1,0 +1,9 @@
+{
+    "title" : "Simple Task",
+    "due-date" : "2023-09-29",
+    "description" : "Multi\nline\ndescription",
+    "tags" : ["Simple", "Homework", "Not Urgent"],
+    "priority": 1,
+    "progress" : "in-progress",
+    "pinned": false
+}

@@ -1,0 +1,9 @@
+{
+    "title" : "Important Task",
+    "due-date" : "2023-10-02",
+    "description" : "Multi\nline\ndescription",
+    "tags" : ["Important"],
+    "priority": 4,
+    "progress" : "done",
+    "pinned": true
+}
